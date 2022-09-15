@@ -1,0 +1,48 @@
+import pandas as pd
+import os
+
+# 读excel
+# df1 = pd.read_excel("项目组1.xlsx")
+# df2 = pd.read_excel("项目组2.xlsx")
+#
+# print(df1)
+# print(df2)
+
+dfs = []
+for root,dirs,files in os.walk('.'):
+    for file in files:
+        if file.endswith('.xlsx'):
+            df = pd.read_excel(file)
+            dfs.append(df)
+
+
+# 添加 年终奖金 一列
+for df in dfs:
+    # 新增一列必须要要先有这一列的列名
+    df['年终奖金'] = ''
+    for index,row in df.iterrows():
+        score = row['绩效']
+        group = row['项目组']
+        if group == '项目组1':
+            row['项目组'] = '项目组3'
+        bonus = 0
+        if score > 95:
+            bonus = 8000
+        elif score > 90:
+            bonus = 6000
+        else:
+            bonus = 4000
+
+        row['年终奖金'] = bonus
+        # 必须要重新赋值回去
+        df.iloc[index] = row
+
+
+# 合并表格
+new_df = pd.concat(dfs,ignore_index=True)
+print(new_df)
+
+# 保存
+new_df.to_excel("项目组综合.xlsx",index = False)
+
+
