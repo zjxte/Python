@@ -1,0 +1,18 @@
+import requests
+import parsel
+
+url = "https://finviz.com/news.ashx"
+# url = 'https://v.qq.com/iframe/preview.html?width=500&amp;height=375&amp;auto=0&amp;vid=z3359ve0le7'
+headers = {
+
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36'
+}
+r = requests.get(url=url, headers=headers)
+selector = parsel.Selector(r.text)
+
+news = selector.css('.news tr.nn')
+
+for new in news:
+    title = new.css('td a::text').get()
+    link = new.css('a::attr(href)').get()
+    print(title, link)
