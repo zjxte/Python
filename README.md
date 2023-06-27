@@ -6,3 +6,8 @@ regex code for replace dictionary
                 (.*?):(.*)
 replace as 
                 "$1":"$2",
+
+
+pandas filter
+                no_info_records = df.query("GIS_PIN != '000000' & TAX_PIN.isnull() & GIS_PARID.notnull()", engine='python')
+no_info_records
