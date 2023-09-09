@@ -15,10 +15,10 @@ no_info_records
 
 https://curl.iculture.cc
 
-## requirements.txt
+## Save as requirements.txt
 
         pip freeze > requirements.txt
-
-        pip install - r requirements.txt
+## Install dependencies
+        pip install -r requirements.txt
 
 
