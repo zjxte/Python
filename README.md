@@ -1,3 +1,4 @@
+This is code I wrote for the [video](https://www.youtube.com/watch?v=Z2EUDerNkOY&t)
 # Python
 Find record from df
 ```df.loc[df['Current Owner Address'].str.contains(r'ROCKY MT',regex=True,na=False)]```
