@@ -9,15 +9,21 @@ replace as
 
 
 * pandas filter
-```no_info_records = df.query("GIS_PIN != '000000' & TAX_PIN.isnull() & GIS_PARID.notnull()", engine='python')```
+```
+no_info_records = df.query("GIS_PIN != '000000' & TAX_PIN.isnull() & GIS_PARID.notnull()", engine='python')
+```
 no_info_records
 
 
 https://curl.iculture.cc
 
 ## Save as requirements.txt
-```pip freeze > requirements.txt```
+```
+pip freeze > requirements.txt
+```
 ## Install dependencies
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 
