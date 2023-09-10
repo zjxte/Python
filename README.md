@@ -17,6 +17,23 @@ no_info_records
 
 https://curl.iculture.cc
 
+### Create a virtual environment
+This can be done with 
+``` python -m venv env ```
+
+activate the virtual environment with 
+
+``` 
+env/bin/activate
+```
+
+or 
+
+```
+env\Scripts\activate
+```
+
+
 ## Save as requirements.txt
 ```
 pip freeze > requirements.txt
