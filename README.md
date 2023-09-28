@@ -44,11 +44,11 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
-[!NOTE]
+>[!NOTE]
 # Anaconda
 ### Create env
 ```
-conda create --myenv python=3.8
+conda create --myenv $\color{red}{python=3.8}$
 ```
 ### List env
 ```
