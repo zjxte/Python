@@ -47,7 +47,7 @@ pip install -r requirements.txt
 # Anaconda
 ### Create env
 ```
-conda create --myenv $${\color{red}python=3.8$$
+conda create --myenv $${\color{red}python=3.8}$$
 ```
 ### List env
 ```
