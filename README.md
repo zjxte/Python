@@ -1,3 +1,4 @@
+$\color{green}{test}$
 This is code I wrote for the [video](https://www.youtube.com/watch?v=Z2EUDerNkOY&t)
 # Python
 Find record from df
@@ -43,11 +44,11 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
-
+[!NOTE]
 # Anaconda
 ### Create env
 ```
-conda create --myenv $${\color{red}python=3.8}$$
+conda create --myenv python=3.8
 ```
 ### List env
 ```
