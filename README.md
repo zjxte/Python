@@ -44,4 +44,18 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
+# Anaconda
+### Create env
+```
+conda create --myenv python=3.8
+```
+### List env
+``` conda env list
+```
+### Activate env
+``` activate myenv
+```
+### Run jupyter notebook
+```jupyter-notebook
+```
 
