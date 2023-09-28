@@ -50,12 +50,15 @@ pip install -r requirements.txt
 conda create --myenv python=3.8
 ```
 ### List env
-``` conda env list
+```
+conda env list
 ```
 ### Activate env
-``` activate myenv
+```
+activate myenv
 ```
 ### Run jupyter notebook
-```jupyter-notebook
+```
+jupyter-notebook
 ```
 
