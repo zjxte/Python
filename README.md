@@ -2,7 +2,9 @@ $\color{green}{test}$
 This is code I wrote for the [video](https://www.youtube.com/watch?v=Z2EUDerNkOY&t)
 # Python
 Find record from df
-```df.loc[df['Current Owner Address'].str.contains(r'ROCKY MT',regex=True,na=False)]```
+```
+df.loc[df['Current Owner Address'].str.contains(r'ROCKY MT',regex=True,na=False)]
+```
 
 * regex code for replace dictionary 
 ```(.*?):(.*)```
@@ -44,7 +46,7 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
-> [!NOTE]  
+> **Note**
 > Highlights information that users should take into account, even when skimming.
 
 > [!IMPORTANT]  
