@@ -44,7 +44,15 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
->[!NOTE]
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+> 
 # Anaconda
 ### Create env, $\color{red}{python=3.8 is optional}$
 ```
