@@ -84,3 +84,11 @@ pd.options.display.max_columns= None
 pd.set_option('display.max_rows', 3000)
 pd.set_option('display.max_columns', 3000)
 ```
+## If you use Anaconda for environment management you most likely created requirements.txt file via:
+```
+conda list --explicit > requirements.txt
+```
+### To recreate the environment with all your listed packages use:
+```
+conda env create --file requirements.txt
+```
