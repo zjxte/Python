@@ -25,7 +25,7 @@ https://curl.iculture.cc
 This can be done with 
 ``` python -m venv env ```
 
-activate the virtual environment with 
+### activate the virtual environment with 
 
 ``` 
 env/bin/activate
