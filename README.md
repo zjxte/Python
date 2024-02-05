@@ -23,7 +23,9 @@ https://curl.iculture.cc
 
 ### Create a virtual environment
 This can be done with 
-``` python -m venv env ```
+``` 
+python -m venv env
+```
 
 ### activate the virtual environment with 
 
